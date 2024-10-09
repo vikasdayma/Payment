@@ -15,6 +15,10 @@ const Fine = () => {
     }, 5000);
   };
 
+  const handleUpi=()=>{
+   window.location.href='https://www.phonepe.com/'
+  }
+
   return (
     <div className="bg-gray-950 min-h-screen flex items-center justify-center text-gray-100 py-12 px-6 sm:px-12 lg:px-24">
       <div className="w-full max-w-2xl bg-gray-900 rounded-lg p-8 shadow-md">
@@ -54,7 +58,9 @@ const Fine = () => {
               <button className="w-full max-w-xs bg-yellow-600 hover:bg-yellow-700 text-gray-100 p-3 rounded-md mb-2">
                 Credit/Debit Card
               </button>
-              <button className="w-full max-w-xs bg-blue-500 hover:bg-blue-600 text-gray-100 p-3 rounded-md mb-2">
+              <button className="w-full max-w-xs bg-blue-500 hover:bg-blue-600 text-gray-100 p-3 rounded-md mb-2 "
+              onClick={handleUpi}
+              >
                 UPI Payment
               </button>
             </div>
